@@ -50,7 +50,6 @@ app.post("/login", (req, res) => {
   });
 });
 
-// 🟡 GET - Fetch all students
 app.get("/get", (req, res) => {
   const sql = "SELECT * FROM users";
   db.query(sql, (err, result) => {

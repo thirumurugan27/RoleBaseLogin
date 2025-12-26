@@ -11,7 +11,6 @@ export default function Login() {
 
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-
   const handleLogin = async (e) => {
     e.preventDefault();
     setError("");
@@ -55,7 +54,7 @@ export default function Login() {
             </label>
             <input
               id="email"
-              type="email"
+              type="text"
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
